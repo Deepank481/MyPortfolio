@@ -1,21 +1,7 @@
-.overlay-container {
-  position: relative;
-  text-align: center;
-  height: 500px;
+.intro {
+  height: 40rem;
 }
 
-.overlay-center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.circle-box {
-  height: 50px;
-  width: 50px;
-  background-color: rgb(15, 23, 42);
-  color: rgb(219, 222, 222);
-  border-radius: 50%;
-  position: relative;
+.show-border {
+  border: 2px solid black;
 }
