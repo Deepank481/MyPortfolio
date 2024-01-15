@@ -34,18 +34,40 @@
           >
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
+                <a
+                  class="nav-link"
+                  id="about-menu-item"
+                  aria-current="about-section"
+                  href="#about"
                   >About</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Skills</a>
+                <a
+                  class="nav-link"
+                  id="skill-menu-item"
+                  href="#skills"
+                  aria-current="skills-section"
+                  >Skills</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link">Work Experience</a>
+                <a
+                  class="nav-link"
+                  aria-current="work-section"
+                  id="work-menu-item"
+                  href="#work"
+                  >Work Experience</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link">Projects</a>
+                <a
+                  class="nav-link"
+                  id="project-menu-item"
+                  href="#projects"
+                  aria-current="projects-section"
+                  >Projects</a
+                >
               </li>
             </ul>
           </div>
@@ -64,7 +86,7 @@
       </section>
 
       <!--About section of the portfolio-->
-      <section>
+      <section id="about">
         <div class="container-fluid">
           <div class="row align-items-center">
             <div class="col-8">
@@ -114,18 +136,17 @@
         </div>
       </section>
 
-      <section>
+      <!--Skill section of the portfolio-->
+
+      <section id="skills">
         <div class="container-fluid">
           <div class="row">
             <div class="col-12">
-              <article class="my-5">
-                <h1>What I Do</h1>
+              <article class="py-5 text-center">
+                <h1 class="text-decoration-underline">What I Do</h1>
               </article>
               <article>
-                <div class="container-fluid">
-                  <div class="row mb-5">
-                    <div class="col-4 border-bottom border-dark border-2"></div>
-                  </div>
+                <div class="container-fluid py-5">
                   <div class="row">
                     <div
                       class="col-6 py-5 border-end border-bottom border-2 border-dark"
@@ -191,7 +212,69 @@
           </div>
         </div>
       </section>
+
+      <!--Work Experience Section-->
+
+      <section id="work">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12 text-center p-5">
+              <h1 class="text-decoration-underline">Experience</h1>
+            </div>
+          </div>
+          <div class="row justify-content-center p-5">
+            <div class="col-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    IT Officer Nainital Bank (2019-Present)
+                  </h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary">
+                    Joined Nainital Bank as an IT Officer in Dec 2019
+                  </h6>
+                  <p class="card-text">
+                    Joined Nainital Bank as an IT Officer in Dec 2019. Worked in
+                    NEFT/RTGS Cell from Dec 2019 to October 2023. Currently
+                    posted in the Regional Office Dehradun (from October 2023 to
+                    Present)
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    B.Tech - Information Technology (2011-2015)
+                  </h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary">
+                    B.Tech from College of Engineering Roorkee in Information
+                    Technology
+                  </h6>
+                  <p class="card-text">
+                    Completed my B.Tech from College of Engineering Roorkee from
+                    Information Technology in 2015. Organises various coding
+                    events in the college.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Project Developed-->
+      <section id="projects">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12 text-center">
+              <h1>Some of my Work</h1>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
