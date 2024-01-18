@@ -6,6 +6,7 @@ const aboutMenuItem = document.getElementById("about-menu-item");
 const skillMenuItem = document.getElementById("skill-menu-item");
 const workMenuItem = document.getElementById("work-menu-item");
 const projectMenuItem = document.getElementById("project-menu-item");
+const displayTimePeriod = document.getElementById("display-timeperiod");
 const menuItems = [aboutMenuItem, skillMenuItem, workMenuItem, projectMenuItem];
 
 for (let item of menuItems) {
@@ -60,4 +61,10 @@ function onClickMenuItems(e) {
 
 const oldDate = luxon.DateTime.fromISO("2019-12-02");
 const newDate = luxon.DateTime.now();
-console.log(newDate.diff(oldDate, ["year", "months", "days"]).toObject());
+console.log();
+
+displayTimePeriod.innerText = `${
+  newDate.diff(oldDate, ["year", "months", "days"]).toObject()["years"]
+}y and ${
+  newDate.diff(oldDate, ["year", "months", "days"]).toObject()["months"]
+}m`;
