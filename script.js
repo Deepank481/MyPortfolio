@@ -57,3 +57,7 @@ function onClickMenuItems(e) {
       break;
   }
 }
+
+const oldDate = luxon.DateTime.fromISO("2019-12-02");
+const newDate = luxon.DateTime.now();
+console.log(newDate.diff(oldDate, ["year", "months", "days"]).toObject());
